@@ -1,4 +1,4 @@
-package com.example.sharemate.Item;
+package com.example.sharemate.item;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

@@ -1,4 +1,4 @@
-package com.example.sharemate.Request;
+package com.example.sharemate.request;
 
 import lombok.Getter;
 import lombok.Setter;

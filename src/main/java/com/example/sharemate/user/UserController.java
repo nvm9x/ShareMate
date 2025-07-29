@@ -1,6 +1,5 @@
-package com.example.sharemate.User;
+package com.example.sharemate.user;
 
-import com.example.sharemate.Item.Item;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

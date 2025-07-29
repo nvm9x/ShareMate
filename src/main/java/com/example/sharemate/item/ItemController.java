@@ -1,6 +1,5 @@
-package com.example.sharemate.Item;
+package com.example.sharemate.item;
 
-import com.example.sharemate.exceptions.NotFoundException;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

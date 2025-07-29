@@ -1,4 +1,4 @@
-package com.example.sharemate.Item;
+package com.example.sharemate.item;
 
 import org.springframework.stereotype.Component;
 
