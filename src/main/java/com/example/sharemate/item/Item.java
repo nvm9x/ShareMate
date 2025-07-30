@@ -1,9 +1,13 @@
 package com.example.sharemate.item;
 
+import com.example.sharemate.booking.Booking;
 import com.example.sharemate.user.User;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter
@@ -23,5 +27,8 @@ public class Item {
     @ManyToOne
     @JoinColumn(name="owner_id")
     private User owner;
+
+    @OneToMany(mappedBy = "item")
+    List<Booking> bookings = new ArrayList<>();
 
 }

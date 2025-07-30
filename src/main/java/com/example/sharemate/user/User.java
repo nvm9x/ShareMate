@@ -1,6 +1,8 @@
 package com.example.sharemate.user;
 
+import com.example.sharemate.booking.Booking;
 import com.example.sharemate.item.Item;
+import com.example.sharemate.request.Request;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -26,4 +28,13 @@ public class User {
 
     @OneToMany(mappedBy = "owner")
     List<Item> itemList = new ArrayList<>();
+
+    @OneToMany(mappedBy = "booker")
+    List<Booking> bookings = new ArrayList<>();
+
+    @OneToMany(mappedBy = "requestor")
+    List<Request> requests = new ArrayList<>();
+
+
+
 }
